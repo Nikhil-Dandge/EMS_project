@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            border: 1px solid black;
+            display: inline-block;
+            width: 250px;
+            height: 200px;
+            padding: 40px;
+            padding-left: 25px;
+            padding-top: 25px;
+            background-color: burlywood;
+            margin-left: 500px;
+            margin-top: 150px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        {%csrf_token%}
+    <div id="div1">
+        <label for="username">Username</label><br><br>
+        <input type="text" name="username"><br><br>
+        <label for="password">Password</label><br><br>
+        <input type="password" name="password"><br><br>
+        <input type="submit" value="Signup">
+    </div>
+    </form>
+</body>
+</html>
